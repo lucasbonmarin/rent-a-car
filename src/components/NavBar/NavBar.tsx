@@ -1,5 +1,6 @@
-import { Bars, Nav, NavBtn, NavBtnLink, NavLink, NavMenu } from "./NavbarElements/NavbarElements";
+import { Bars,Times, Nav, NavBtn, NavBtnLink, NavLink, NavMenu } from "./NavbarElements/NavbarElements";
 import CarIcon from '../../assets/icons/car_logo.svg';
+import { useCallback, useState } from "react";
 
 export type NavbarTab = {
     label: string;
@@ -31,6 +32,12 @@ const navbarTabs: NavbarTab[] = [
 
 const NavBar = () => {
 
+    const [clicked, setClicked] = useState<boolean>(false);
+
+    const handleClick = useCallback(() => {
+        setClicked(!clicked)
+    }, [clicked]);
+
     return (
         <>
             <Nav>
@@ -40,10 +47,10 @@ const NavBar = () => {
                         <strong>RENT</strong><br/>a car
                     </span>
                 </NavLink>
-                <Bars />
-                <NavMenu>
+                { clicked ? <Times onClick={handleClick} /> : <Bars onClick={handleClick} /> }
+                <NavMenu defaultChecked={clicked}>
                     {navbarTabs.map(tab => (
-                        <NavLink to={tab.path}>
+                        <NavLink to={tab.path} onClick={() => clicked && handleClick()}>
                             {tab.label}
                         </NavLink>
                     ))}
