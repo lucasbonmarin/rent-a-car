@@ -1,8 +1,85 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
 
+:root {
+  /* colors */
+  --blue1: #256ce1;
+
+  --white: #fff;
+
+  --black: #000;
+
+  --bg-gray: #f8f8f8;
+  --bg-white: #ffffff;
+
+  --text-black: #010103;
+  --text-gray: #706f7b;
+  --btn-black: #161616;
+
+  /* sizes */
+  --h1-size: 5.2rem;
+  --h2-size: 4.2rem;
+  --h3-size: 2.4rem;
+  --h4-size: 2.2rem;
+  --p-size: 1.6rem;
+  --input-size: 1.4rem;
+}
+
 * {
   font-family: 'Sora', sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-white);
+  position: relative;
+}
+
+.container {
+  max-width: 133rem !important;
+  margin: 0 auto !important;
+  padding: 0 2.5rem !important;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--blue1) var(--white);
+}
+
+/* Chrome, Edge, Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+*::-webkit-scrollbar-track:hover {
+  background-color: #ffffff;
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: var(--blue1);
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: var(--blue1);
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: var(--blue1);
 }

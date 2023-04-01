@@ -4,7 +4,7 @@ import { FaBars } from 'react-icons/fa';
 import { FaTimes } from 'react-icons/fa';
 
 export const Nav = styled.nav`
-    background: #fff;
+    background-color: transparent;
     height: 80px;
     display: flex;
     justify-content: space-between;
@@ -13,7 +13,7 @@ export const Nav = styled.nav`
 `;
 
 export const NavLink = styled(Link)`
-    color: #000;
+    color: var(--text-black);
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -25,13 +25,13 @@ export const NavLink = styled(Link)`
 
     &:hover {
         transition: all 0.2s ease-in-out;
-        color: #256ce1;
+        color: var(--blue1);
     }
 `;
 
 export const Bars = styled(FaBars)`
     display: none;
-    color: #000;
+    color: var(--text-black);
 
     @media screen and (max-width: 768px) {
         display: block;
@@ -46,7 +46,7 @@ export const Bars = styled(FaBars)`
 
 export const Times = styled(FaTimes)`
     display: none;
-    color: #000;
+    color: var(--text-black);
 
     @media screen and (max-width: 768px) {
         display: block;
@@ -76,7 +76,7 @@ export const NavMenu = styled.div`
         transition: all 0.5s ease;
 
         ${props => props.defaultChecked && `
-            background: #fff;
+            background: var(--white);
             left: 0;
             opacity: 1;
             transition: all 0.5s ease;
@@ -97,9 +97,9 @@ export const NavBtn = styled.nav`
 
 export const NavBtnLink = styled(Link)`
     border-radius: 4px;
-    background: #256ce1;
+    background: var(--blue1);
     padding: 10px 22px;
-    color: #fff;
+    color: var(--white);
     border: none;
     outline: none;
     cursor: pointer;
@@ -108,8 +108,8 @@ export const NavBtnLink = styled(Link)`
 
     &:hover {
         transition: all 0.2s ease-in-out;
-        background: #fff;
-        color: #010606;
+        background: var(--bg-gray);
+        color: var(--text-black);
     }
 `;
 

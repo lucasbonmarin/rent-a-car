@@ -1,0 +1,149 @@
+.welcome-section {
+    width: 100%;
+    height: 97vh;
+    background-color: var(--bg-gray);
+    position: relative;
+}
+
+.welcome-bg {
+    position: absolute;
+    top: O;
+    right: 0;
+    z-index: 1;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}
+
+.welcome-content {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    @media screen and (max-width: 768px) {
+        justify-content: center;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        z-index: 3;
+        max-width: 50rem;
+        margin-top: 5rem;
+
+        @media screen and (max-width: 768px) {
+            text-align: center;
+            align-items: center;
+        }
+
+        h4 {
+            font-size: var(--h4-size);
+            color: var(--text-black);
+        }
+
+        h1 {
+            font-size: var(--h1-size);
+            font-weight: 700;
+            color: var(--text-black);
+            line-height: 1.2;
+            margin-top: 1rem;
+            margin-bottom: 2.3rem;
+
+            span {
+                color: var(--blue1);
+            }
+        }
+
+        p {
+            font-size: var(--p-size);
+            line-height: 1.6;
+            color: var(--text-gray);
+            margin-bottom: 4rem;
+        }
+
+        &__btns {
+            display: flex;
+            gap: 2rem;
+            font-size: var(--p-size);
+
+            @media screen and (max-width: 450px) {
+                flex-direction: column;
+            }
+
+            a {
+                text-decoration: none;
+                color: var(--white);
+                font-weight: 700;
+            }
+
+            &__book-ride {
+                background-color: var(--blue1);
+                padding: 1.8rem 3rem;
+                border-radius: 0.3rem;
+                box-shadow: 0 10px 15px 0 rgb(37 108 225 / 35%);
+                transition: all 0.3s;
+                border: 2px solid var(--blue1);
+
+                @media screen and (max-width: 450px) {
+                    flex-padding: 1.8rem 8rem;
+                }
+
+                &:hover {
+                    box-shadow: 0 10px 15px 0 rgb(37 108 225 / 60%);
+                    background-color: #1e68e2;
+                }
+            }
+
+            &__learn-more {
+                background-color: var(--text-black);
+                padding: 1.8rem 3rem;
+                border-radius: 0.3rem;
+                border: 2px solid var(--text-black);
+                transition: all 0.3s;
+
+                &:hover {
+                    background-color: transparent;
+                    color: var(--text-black);
+                }
+            }
+        }
+    }
+
+    &__car-img {
+        z-index: 2;
+        position: absolute;
+        right: 0;
+        width: 65%;
+        margin-top: 5rem;
+
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+    }
+}
+
+.scroll-up {
+    position: fixed;
+    font-size: 2.5rem;
+    color: var(--white);
+    background-color: var(--blue1);
+    border: 3px solid white;
+    width: 2rem;
+    height: 2rem;
+    bottom: 5rem;
+    right: 5rem;
+    z-index: 20;
+    display: none;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 2rem;
+    cursor: pointer;
+}
+
+.show-scroll {
+    display: flex;
+}
