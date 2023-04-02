@@ -11,7 +11,7 @@
     right: 0;
     z-index: 1;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1000px) {
         display: none;
     }
 }
@@ -23,7 +23,7 @@
     align-items: center;
     position: relative;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1000px) {
         justify-content: center;
     }
 
@@ -34,7 +34,7 @@
         max-width: 50rem;
         margin-top: 5rem;
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 1000px) {
             text-align: center;
             align-items: center;
         }
@@ -118,8 +118,9 @@
         right: 0;
         width: 65%;
         margin-top: 5rem;
+        transition: all 0.75s ease-in-out;
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 1000px) {
             display: none;
         }
     }
