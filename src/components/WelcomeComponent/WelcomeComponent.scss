@@ -118,10 +118,10 @@
         right: 0;
         width: 65%;
         margin-top: 5rem;
-        transition: all 0.75s ease-in-out;
+        transition: all 0.5s ease-in-out;
 
         @media screen and (max-width: 1000px) {
-            display: none;
+            right: -100%;
         }
     }
 }

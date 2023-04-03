@@ -1,0 +1,50 @@
+.modal-car-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    h5 {
+        font-size: 1.8rem;
+        color: var(--blue1);
+    }
+
+    span {
+        display: flex;
+        gap: 1rem;
+
+        @media screen and (max-width: 650px) {
+            grid-template-columns: 1fr;
+            text-align: center;
+            justify-content: center;
+        }
+
+        i {
+            font-size: 1.8rem;
+            padding-top: 0.2rem;
+            color: #777777;
+            top: -0.125em;
+            position: relative;
+
+            @media screen and (max-width: 650px) {
+                display: none;
+            }
+        }
+
+        h6 {
+            font-size: 1.5rem;
+            margin-bottom: 0.2rem;
+        }
+
+        p {
+            font-size: var(--p-size);
+            color: #777777;
+        }
+    }
+}
+
+.input-time {
+    text-align: center;
+    width: 8rem;
+    font-size: 14px;
+    cursor: pointer;
+}
