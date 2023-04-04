@@ -19,7 +19,7 @@ const PlanTripComponent = () => (
                             <h3>Select Car</h3>
                             <p>
                                 We offers a big range of vehicles for all your driving needs.
-                                We have the perfect car to meet your needs.
+                                We have the perfect car to meet your needs
                             </p>
                         </div>
 
@@ -28,7 +28,7 @@ const PlanTripComponent = () => (
                             <h3>Contact Operator</h3>
                             <p>
                                 Our knowledgeable and friendly operators are always ready to 
-                                help with any questions or concerns.
+                                help with any questions or concerns
                             </p>
                         </div>
 
@@ -37,7 +37,7 @@ const PlanTripComponent = () => (
                             <h3>Let's drive</h3>
                             <p>
                                 Whether you're hitting the open road, we've got you covered 
-                                with our wide range of cars.
+                                with our wide range of cars
                             </p>
                         </div>
                     </div>
