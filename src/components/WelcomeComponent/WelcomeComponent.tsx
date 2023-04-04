@@ -56,7 +56,7 @@ const WelcomeComponent = () => {
                     onClick={scrollToTop} 
                     className={`scroll-up ${goUp ? "show-scroll" : ""}`}
                 >
-                    <FaAngleUp />
+                    <i><FaAngleUp style={{position: 'relative', top: '.125em'}} /></i>
                 </div>
 
             </section>
