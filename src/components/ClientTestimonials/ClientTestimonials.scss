@@ -1,0 +1,110 @@
+.testimonials-section {
+    background-color: var(--bg-gray);
+    color: var(--text-black);
+    padding: 10rem 0;
+}
+
+.testimonials-container {
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        text-align: center;
+        max-width: 70rem;
+        margin-bottom: 5rem;
+    }
+
+    h4 {
+        font-size: var(--h4-size);
+        font-weight: 500;
+    }
+
+    h2 {
+        font-size: var(--h2-size);
+        margin-bottom: 1.4rem;
+    }
+
+    p {
+        font-size: var(--p-size);
+        color: var(--text-gray);
+        line-height: 1.4;
+    }
+}
+
+.all-testimonials {
+    display: flex;
+    gap: 3rem;
+    width: 100%;
+    justify-content: center;
+    padding: 3rem;
+
+    @media screen and (max-width: 1000px) {
+        padding: 0;
+    }
+
+    &__box {
+        background-color: white;
+        box-shadow: 0 20px 40px 0 rgb(0 0 0 / 8%);
+        width: 54rem;
+        padding: 5.5rem;
+        position: relative;
+
+        @media screen and (max-width: 1000px) {
+            padding: 5rem 3rem;
+        }
+
+        p {
+            font-size: var(--h4-size);
+            font-weight: 500;
+            color: var(--text-black);
+        }
+
+        &__name {
+            display: flex;
+
+            &__profile {
+                display: flex;
+                gap: 2rem;
+                align-items: center;
+                margin-top: 3rem;
+
+                img {
+                    width: 7rem;
+                    height: 7rem;
+                    border-radius: 50%;
+                }
+
+                h4 {
+                    font-size: 1.8rem;
+                }
+
+                p {
+                    font-size: var(--p-size);
+                    font-weight: 400;
+                    color: var(--text-gray);
+                }
+            }
+        }
+    }
+}
+
+.quotes-icon {
+    font-size: 6.2rem;
+    color: var(--blue1);
+    position: absolute;
+    bottom: 33px;
+    right: 60px;
+
+    @media screen and (max-width: 470px) {
+        display: none;
+    }
+}
+
+.box-2 {
+    @media screen and (max-width: 900px) {
+        display: none;
+    }
+}
