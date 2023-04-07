@@ -1,3 +1,4 @@
+import Footer from './components/Footer/Footer';
 import NavBar from './components/NavBar/NavBar';
 import AboutPage from './pages/AboutPage/AboutPage';
 import HomePage from './pages/HomePage/HomePage';
@@ -11,6 +12,7 @@ function App() {
         <Route index path='/' element={<HomePage />} />
         <Route path='/about' element={<AboutPage />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }
