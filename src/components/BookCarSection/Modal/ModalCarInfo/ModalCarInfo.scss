@@ -1,0 +1,42 @@
+.car-info {
+    background-color: white;
+    padding: 3rem 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 1px solid #7777779f;
+
+    @media screen and (max-width: 650px) {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    &__model {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+
+        @media screen and (max-width: 650px) {
+            margin-top: 3.5rem;
+        }
+
+        h5 {
+            font-size: 1.8rem;
+            color: var(--blue1);
+
+            span {
+                color: var(--text-black);
+            }
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.dates-div {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
