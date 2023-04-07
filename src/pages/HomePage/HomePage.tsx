@@ -1,4 +1,5 @@
 import Banner from "../../components/Banner/Banner";
+import BookBanner from "../../components/BookBanner/BookBanner";
 import BookCarSection from "../../components/BookCarSection/BookCarSection";
 import ChooseUs from "../../components/ChooseUs/ChooseUs";
 import ClientTestimonials from "../../components/ClientTestimonials/ClientTestimonials";
@@ -18,7 +19,7 @@ const HomePage = () => (
         <ChooseUs />
         <ClientTestimonials />
         <Faq />
-        {/* <Footer /> */}
+        <BookBanner />
     </>
 );
 

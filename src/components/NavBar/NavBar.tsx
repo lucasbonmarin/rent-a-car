@@ -18,7 +18,7 @@ const navbarTabs: NavbarTab[] = [
     },
     {
         label: "Vehicle Models",
-        path: "vehicle-models"
+        path: "/vehicle-models"
     },
     {
         label: "Testimonials",
