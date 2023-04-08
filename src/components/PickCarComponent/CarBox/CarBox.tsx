@@ -39,7 +39,7 @@ const CarBox = ({
                     </div>
                     <div className="pick-description__table">
                         {Object.keys(carData).map(key => (
-                            !['name', 'price', 'img'].includes(key) &&
+                            !['name', 'price', 'img', 'imgBox'].includes(key) &&
                             <div className="pick-description__table__col">
                                 <span style={{ textTransform: 'capitalize' }}>{key}</span>
                                 <span>{(carData as any)[key]}</span>
