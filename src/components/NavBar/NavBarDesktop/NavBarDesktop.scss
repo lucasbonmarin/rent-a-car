@@ -68,17 +68,16 @@
 
         &__register {
             border-radius: 4px;
-            background-color: var(--blue1);
+            background-color: var(--text-black);
             padding: 1.5rem 3rem;
             color: var(--white);
-            border: none;
+            border: 2px solid var(--text-black);
             outline: none;
             cursor: pointer;
-            transition: all 0.2s ease-in-out;
+            transition: all 0.3s;
             text-decoration: none;
 
             &:hover {
-                transition: all 0.2s ease-in-out;
                 background-color: transparent;
                 color: var(--text-black);
             }

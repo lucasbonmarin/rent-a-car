@@ -23,13 +23,16 @@ const ContactPage = () => (
                             years of experience.
                         </p>
                         <a href="/">
-                            <BsFillTelephoneFill />&nbsp; (123) -456-789
+                            <BsFillTelephoneFill style={{ position: 'relative', top: '.125em' }} />
+                            &nbsp; (123) -456-789
                         </a>
                         <a href="/">
-                            <IoIosMail />&nbsp; rentacar@gmail.com
+                            <IoIosMail style={{ position: 'relative', top: '.125em' }} />
+                            &nbsp; rentacar@gmail.com
                         </a>
                         <a href="/">
-                            <MdLocationOn />&nbsp; Paris, France
+                            <MdLocationOn style={{ position: 'relative', top: '.125em' }} />
+                            &nbsp; Paris, France
                         </a>
                     </div>
                     <div className='contact-div__form'>
@@ -50,7 +53,8 @@ const ContactPage = () => (
                             <textarea placeholder='Write here...' />
 
                             <button type="submit">
-                                <BsFillSendFill />&nbsp; Send Message
+                                <BsFillSendFill style={{ position: 'relative', top: '.125em' }} />
+                                &nbsp; Send Message
                             </button>
                         </form>
                     </div>

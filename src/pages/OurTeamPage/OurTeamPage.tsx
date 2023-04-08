@@ -5,6 +5,8 @@ import Person3 from "../../assets/images/team/3.png";
 import Person4 from "../../assets/images/team/4.png";
 import Person5 from "../../assets/images/team/5.png";
 import Person6 from "../../assets/images/team/6.png";
+import BookBanner from "../../components/BookBanner/BookBanner";
+
 import './OurTeam.scss';
 
 export type TeamMember = {
@@ -65,6 +67,7 @@ const OurTeamPage = () => (
                     ))}
                 </div>
             </div>
+            <BookBanner />
         </section>
     </>
 
